@@ -52,6 +52,7 @@ def sendGroupInviteMsg(msg,CurUserName):
 #if group chat msg contains kick ads, start kicking logic
 @itchat.msg_register(TEXT, isGroupChat=True)
 def text_reply(msg):
+  itchat.send('general_testing😊', toUserName=msg['FromUserName'])
   if msg['ActualUserName'] in settings.admins:
     content = msg['Content']
     if(content[0]=="@"):

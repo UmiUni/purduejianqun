@@ -1,11 +1,8 @@
-# -*- codingD: UTF-8 -*-
+# -*- coding: UTF-8 -*-
 import settings
 import itchat
 
-ADMIN = u"@Purdue"
-
-def getAdminList(roomID):
-	return getChatroomMemberList(rooID, ADMIN)
+ADMIN = u'@Purdue'
 
 #get chatroom id from chatroom name
 def getName(chatroomName):
@@ -56,10 +53,11 @@ def delFromAllGroup(content):
 #del a using according to content and roomId
 def delUser(roomId, content):
   if(roomId is None):
-    return 
+    return
   #ret = itchat.delete_member_from_chatroom(roomId,[{'UserName':searchUser(getChatroomMemberList(roomId),content)}])
-  kick_list = [id for id in searchUser(getChatroomMemberList(roomId),content) if id not in getAdminList(roomID)]
-  ret = itchat.delete_member_from_chatroom(roomId,kick_list)
+  content = content.replace(ADMIN, '')
+  itchat.send(content, toUserName=roomId)
+  ret = itchat.delete_member_from_chatroom(roomId,searchUser(getChatroomMemberList(roomId),content))
   if(ret):
     itchat.send('谢谢群主，为保持群内清洁,已清除广告号~😊',toUserName=roomId)
 
