@@ -16,6 +16,8 @@ itchat.auto_login(enableCmdQR=2,hotReload=True)
 itchat.get_chatrooms(update=True)
 settings.init()
 
+Administer = u'Purdue'
+
 @itchat.msg_register('Friends')
 def add_friend(msg):
     itchat.add_friend(**msg['Text'])
@@ -38,7 +40,7 @@ def sendGroupInviteMsg(msg,CurUserName):
   #print x
   if(len(x) >0):
     y= int(x[0])
-    if(y>=0 and y<=11):
+    if(y>=0 and y<=1):
       #print settings.chatGroups[y]
       pullMembersMore(msg, settings.chatGroups[y], CurUserName)
       sleep(0.5)
