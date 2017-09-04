@@ -2,7 +2,6 @@
 import settings
 import itchat
 
-ADMIN = u'@Purdue'
 
 #get chatroom id from chatroom name
 def getName(chatroomName):
@@ -51,7 +50,7 @@ def delFromAllGroup(content):
     delUser(chatroomId,content)
 
 #del a using according to content and roomId
-def delUser(roomId, content):
+def delUser(roomId, content, ADMIN):
   if(roomId is None):
     return
   #ret = itchat.delete_member_from_chatroom(roomId,[{'UserName':searchUser(getChatroomMemberList(roomId),content)}])

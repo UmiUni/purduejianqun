@@ -56,7 +56,7 @@ def text_reply(msg):
     content = msg['Content']
     if(content[0]=="@"):
       if u'广告' in content:
-        delUser(msg['FromUserName'],content)
+        delUser(msg['FromUserName'],content,settings.ADMIN)
 
 itchat.run() 
 
