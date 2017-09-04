@@ -16,8 +16,6 @@ itchat.auto_login(enableCmdQR=2,hotReload=True)
 itchat.get_chatrooms(update=True)
 settings.init()
 
-Administer = u'Purdue'
-
 @itchat.msg_register('Friends')
 def add_friend(msg):
     itchat.add_friend(**msg['Text'])
