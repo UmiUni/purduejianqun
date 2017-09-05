@@ -12,7 +12,7 @@ def init():
   u'Purdue普渡租房',
   u'Purdue普渡拼车',
   u'Purdue普渡美食',
-  u'Purude普渡二手车',
+  u'Purdue普渡二手车',
   u'北美CPA',
   u'北美信用',
   u'线上KTV',
