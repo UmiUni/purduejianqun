@@ -38,7 +38,7 @@ def sendGroupInviteMsg(msg,CurUserName):
   #print x
   if(len(x) >0):
     y= int(x[0])
-    if(y>=0 and y<=7):
+    if(y>=0 and y<=8):
       #print settings.chatGroups[y]
       pullMembersMore(msg, settings.chatGroups[y], CurUserName)
       sleep(0.5)
