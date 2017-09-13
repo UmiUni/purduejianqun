@@ -57,3 +57,4 @@ def text_reply(msg):
       if u'广告' in content:
         delUser(msg['FromUserName'],content,settings.ADMIN)
 
+itchat.run()
