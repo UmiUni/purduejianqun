@@ -28,7 +28,7 @@ def init():
   v6= u"回复 5 北美信用卡爱好者总群;\n"
   v7= u"回复 6 加线上KTV开嗓🎙️北美总群;\n"
   v8= u"回复 7 加北美表情分享总群;\n"
-  v9= u"回复 99 查看【北美加群小助手Jogchat.com】公众号二维码\n"
+  v9= u"回复 99 查看【北美加群小助手Jogchat.com】\n公众号二维码\n"
   vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9
   
   usersDict = {}

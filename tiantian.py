@@ -58,5 +58,17 @@ def text_reply(msg):
       if u'广告' in content:
         delUser(msg['FromUserName'],content,settings.ADMIN)
 
+def preventAbuseTalking(CurUserName):
+  if(CurUserName in settings.usersDict):
+    if(settings.usersDict[CurUserName] >= 6):
+      return True
+    if(settings.usersDict[CurUserName] >= 5):
+      itchat.send_msg(settings.vT, CurUserName)
+      itchat.send_msg(u'您已达到今日加群上限，请明日再来～😊', CurUserName)
+      return True
+  else:
+      settings.usersDict[CurUserName] = 1
+  return False
+
 itchat.run() 
 
