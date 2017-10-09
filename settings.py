@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+import datetime
 def init():
 
   global chatGroups
@@ -6,6 +7,7 @@ def init():
   global usersDict
   global admins 
   global ADMIN
+  global previousDay
 
   chatGroups =[
   u'普渡二手交易群',
@@ -40,3 +42,5 @@ def init():
   usersDict = {}
   admins = []
   ADMIN = u'@Purdue加群小助手'
+  previousDay = datetime.datetime.now().day
+ 
