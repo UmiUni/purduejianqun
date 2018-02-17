@@ -36,7 +36,7 @@ def sendGroupInviteMsg(msg,CurUserName):
   #print x
   if(len(x) >0):
     y= int(x[0])
-    if(y>=0 and y<=9):
+    if(y>=0 and y<=10):
       if msg['FromUserName'] not in settings.admins:
         if(preventAbuseTalking(CurUserName)):
           return
