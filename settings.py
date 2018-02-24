@@ -39,8 +39,8 @@ def init():
   v8= u"回复 7 加Chuck郭律师美帝绿卡讨论群;\n"
   v9= u"回复 8 加H1B中中中讨论群;\n"
   v10= u"回复 9 加北美区块链技术交流总群;\n"
-  v11= u"回复 10 加北美股市Trading技术交流总群;\n"
-  v12= u"回复 99 查看【北美加群小助手Jogchat.com】\n公众号二维码加纽约、硅谷、西雅图等群\n"
+  v11= u"回复 99 查看【北美加群小助手Jogchat.com】\n公众号二维码加纽约、硅谷、西雅图等群(无次数限制)\n"
+  v12= u"回复 100 加北美股市Trading技术交流总群(无次数限制);\n"
   vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10+v11+v12
   
   
@@ -49,6 +49,6 @@ def init():
 
   usersDict = {}
   admins = []
-  ADMIN = u'@Purdue加群小助手'
+  ADMIN = u'普渡加群小助手jogchat.com'
   previousDay = datetime.datetime.now().day
  
